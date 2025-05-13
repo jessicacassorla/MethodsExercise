@@ -15,9 +15,33 @@
 
             Console.WriteLine($"{name}, I want to make a story for you.\nOnce upon a time, a lone traveller named {name} trekked all the way from {hometown}. By the time they got here, they were so hungry, so they went to the saloon and ordered some {favFood}. By the time they made it to their living quarters for the night, all they could think about was their momma, {momName}, so they wrote her a letter after a long day travelled.");
         }
+
+        public static int Add(int numOne, int numTwo)
+        {
+            return numOne + numTwo;
+        }
+
+        public static int Subtract(int numOne, int numTwo)
+        {
+            return numOne - numTwo;
+        }
+
+        public static int Multiply(int numOne, int numTwo)
+        {
+            return numOne * numTwo;
+        }
+
+        public static int Divide(int numOne, int numTwo)
+        {
+            return numOne / numTwo;
+        }
         static void Main(string[] args)
         {
-            MethodStory();
+            //MethodStory();
+            Console.WriteLine(Add(8, 17));
+            Console.WriteLine(Subtract(20, 13));
+            Console.WriteLine(Multiply(27, 18));
+            Console.WriteLine(Divide(130, 6));
         }
     }
 }
